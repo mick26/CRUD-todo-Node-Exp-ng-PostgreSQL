@@ -33,13 +33,20 @@ The program is mainly based on a Node Todo Tutorial on [scotch.io](http://scotch
 
 ## Technologies used
   
-- NodeJS
-- ExpressJS
-- AngularJS
-- PostgreSQL 
+- [NodeJS](http://nodejs.org/)
+- [ExpressJS](http://expressjs.com/)
+- [AngularJS](https://angularjs.org/)
+- [PostgreSQL](http://www.postgresql.org/) 
 - [node-postgre](https://github.com/brianc/node-postgres)
-- Bower
+- [Bower](http://bower.io/)
 
+
+## Screen Shot
+
+
+<div align="center">
+		<img width="95%" src="screenshot/todo1.png" alt="Todos" title="Todos"</img>
+</div>
 
 <hr>
 
