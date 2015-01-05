@@ -2,11 +2,7 @@
 Database Connection Settings
 *********************************************************/
 
-
 exports.conString = "postgres://admin:admin@localhost:5432/todos";
-
-
-
 
 
 
@@ -20,13 +16,4 @@ exports.conString = "postgres://admin:admin@localhost:5432/todos";
 //       });
 //    }
 // }
-
-
-
-// exports.dbOptions = {
-//       	host: 'localhost',
-//         user: 'admin',
-//         password: 'letmein',
-//         database: 'node-todo'
-// };
 

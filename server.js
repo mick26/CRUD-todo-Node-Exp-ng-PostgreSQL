@@ -1,6 +1,6 @@
 /*=========================================================
 Michael Cullen
-Todo CRUD - Node / Express / Angular / MySql
+Todo CRUD - Node / Express / Angular / PostgreSQL
 server.js
 
 2014
@@ -19,7 +19,7 @@ http://stackoverflow.com/questions/15619456/how-do-i-use-node-postgres-in-a-serv
 /* ========================================================== 
 External Modules/Packages Required
 ============================================================ */
-var express  = require('express');								//Express v4.1 Web server
+var express  = require('express');								//Express
 var logger   = require('morgan');								//logger middleware
 var bodyParser = require('body-parser');						//needed to read HTTP packet content using req.body etc
 var path = require('path');
@@ -55,13 +55,6 @@ app.use(logger('dev')); 	//log every request to the console
 		
 // parse application/json
 app.use(bodyParser.json()) //Get info from $HTTP POST/PUT packets - needed for req.body
-
-/* ========================================================== 
-Connect to MySql database using express-myconnection middleware
-DB settings are contained in var dbOptions defined in database.js
-single database connection. Connection is never closed. 
-In case of disconnection it will try to reconnect again
-============================================================ */
 
 
 /* ========================================================== 
