@@ -1,28 +1,31 @@
-/**
- * Module - Main Module
- */
+'use strict';
 
-angular.module('postgreDbApp', ['ngRoute', 'postgreDbApp.controllers'])
+/*================================================
+Module - Main App Module
+================================================ */
+angular.module('postgreDbApp', ['ngRoute', 'postgreDbApp.controllers', 'postgreDbApp.services'])
 
 
 .config(function ($routeProvider, $locationProvider) {
+
+  /*================================================
+  Define all the Routes
+  Ref.
+  https://docs.angularjs.org/api/ng/provider/$locationProvider
+  ================================================ */
 	$routeProvider
     
-      .when('/', {
+    .when('/', {
         templateUrl: 'views/main.tpl.html',
         controller: 'MainCtrl',
         reloadOnSearch: false
-      })
+    })
     
-      .otherwise({
+    .otherwise({
         redirectTo: '/'
-      });
+    });
       
-    /*
-    $locationProvider.html5Mode(true);
-    Ref.
-    https://docs.angularjs.org/api/ng/provider/$locationProvider
-    */
+
     $locationProvider.html5Mode({
       enabled: true,
       requireBase: false
